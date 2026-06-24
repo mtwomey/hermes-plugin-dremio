@@ -1,0 +1,6 @@
+name: hermes-plugin-dremio
+version: 0.1.0
+description: Hermes plugin for dremio
+provides_tools:
+  - dremio_ping
+requires_env: []
