@@ -1,6 +1,11 @@
-name: hermes-plugin-dremio
-version: 0.1.0
-description: Hermes plugin for dremio
+name: dremio
+version: 1.0.0
+description: >
+  Dremio Cloud catalog navigation and SQL execution via the native Hermes plugin.
+  Provides catalog browsing, schema inspection, and async SQL job execution.
 provides_tools:
   - dremio_ping
-requires_env: []
+  - dremio_catalog_list
+  - dremio_browse
+  - dremio_get_schema
+  - dremio_run_sql
