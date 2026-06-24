@@ -3,6 +3,7 @@ version: 1.0.0
 description: >
   Dremio Cloud catalog navigation and SQL execution via the native Hermes plugin.
   Provides catalog browsing, schema inspection, and async SQL job execution.
+requires_env: []
 provides_tools:
   - dremio_ping
   - dremio_catalog_list

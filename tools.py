@@ -8,8 +8,12 @@ import json
 import time
 import urllib.parse
 
+import logging
+
 import requests
 from hermes_plugin_core.keychain import cred_get
+
+logger = logging.getLogger("dremio")
 
 # ---------------------------------------------------------------------------
 # Lazy credential state
