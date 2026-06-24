@@ -96,7 +96,7 @@ def dremio_browse(args: dict, **kwargs) -> str:
         resp.raise_for_status()
         obj = resp.json()
 
-        entity_type = obj.get("entityType", obj.get("type", ""))
+        entity_type = obj.get("entityType", obj.get("type", "")).upper()
 
         if entity_type in ("SOURCE", "SPACE", "FOLDER", "HOME", "CONTAINER"):
             children = obj.get("children", [])
